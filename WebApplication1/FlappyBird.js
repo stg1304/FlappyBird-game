@@ -63,7 +63,8 @@ function Update() {
     ctx.drawImage(bird, bx, by, 21, 14);
     by += gravity;
 
-    // Add columns with different position
+
+    // Add obstacles with different position
     for (var i = 0; i < col.length; i++) {
         ctx.drawImage(upcol, col[i].w, 0, 50,col[i].h);
         ctx.drawImage(downcol, col[i].w, col[i].h+gap, 50, canvas.height-col[i].h);
